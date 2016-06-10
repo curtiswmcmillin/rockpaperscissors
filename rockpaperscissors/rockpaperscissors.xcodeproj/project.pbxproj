@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C47709B01D0B492700A6A7E3 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47709AF1D0B492700A6A7E3 /* ResultsViewController.swift */; };
 		C47C57381D0B4275009DD7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47C57371D0B4275009DD7F1 /* AppDelegate.swift */; };
-		C47C573A1D0B4275009DD7F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47C57391D0B4275009DD7F1 /* ViewController.swift */; };
+		C47C573A1D0B4275009DD7F1 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47C57391D0B4275009DD7F1 /* SelectViewController.swift */; };
 		C47C573D1D0B4275009DD7F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47C573B1D0B4275009DD7F1 /* Main.storyboard */; };
 		C47C573F1D0B4275009DD7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47C573E1D0B4275009DD7F1 /* Assets.xcassets */; };
 		C47C57421D0B4275009DD7F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47C57401D0B4275009DD7F1 /* LaunchScreen.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C47709AF1D0B492700A6A7E3 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		C47C57341D0B4275009DD7F1 /* rockpaperscissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rockpaperscissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47C57371D0B4275009DD7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C47C57391D0B4275009DD7F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C47C57391D0B4275009DD7F1 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		C47C573C1D0B4275009DD7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C47C573E1D0B4275009DD7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47C57411D0B4275009DD7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				C47C57371D0B4275009DD7F1 /* AppDelegate.swift */,
-				C47C57391D0B4275009DD7F1 /* ViewController.swift */,
+				C47C57391D0B4275009DD7F1 /* SelectViewController.swift */,
 				C47C573B1D0B4275009DD7F1 /* Main.storyboard */,
 				C47C573E1D0B4275009DD7F1 /* Assets.xcassets */,
 				C47C57401D0B4275009DD7F1 /* LaunchScreen.storyboard */,
 				C47C57431D0B4275009DD7F1 /* Info.plist */,
+				C47709AF1D0B492700A6A7E3 /* ResultsViewController.swift */,
 			);
 			path = rockpaperscissors;
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47C573A1D0B4275009DD7F1 /* ViewController.swift in Sources */,
+				C47C573A1D0B4275009DD7F1 /* SelectViewController.swift in Sources */,
 				C47C57381D0B4275009DD7F1 /* AppDelegate.swift in Sources */,
+				C47709B01D0B492700A6A7E3 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				C47C575E1D0B4275009DD7F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C47C575F1D0B4275009DD7F1 /* Build configuration list for PBXNativeTarget "rockpaperscissorsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				C47C57611D0B4275009DD7F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C47C57621D0B4275009DD7F1 /* Build configuration list for PBXNativeTarget "rockpaperscissorsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				C47C57641D0B4275009DD7F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
