@@ -20,21 +20,35 @@ class SelectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func playRock(){
+    @IBAction func playRock(sender:UIButton){
         print("playRock happened")
+        
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ResultsViewController") as! ResultsViewController
-        vc.selectedItem = "Rock"
+        vc.selectedItem = getSelectedItem(sender)
+        
         presentViewController(vc, animated: true, completion: nil)
-
     }
 
-    @IBAction func playPaper(){
+    @IBAction func playPaper(sender:UIButton){
         print("playPaper happened")
+        
+        performSegueWithIdentifier("play", sender: sender)
     }
     
-    @IBAction func playScissors(){
-        print("playScissors happened")
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "play" {
+            let vc = segue.destinationViewController as! ResultsViewController
+            vc.selectedItem = getSelectedItem(sender as! UIButton)
+        }
     }
+    
+    // MARK: Utilities
+    
+    private func getSelectedItem(sender: UIButton) -> String {
+        // Titles are set to one of: Rock, Paper, or Scissors
+        return sender.titleForState(.Normal)!
+    }
+
 
 }
 

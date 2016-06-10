@@ -24,7 +24,7 @@
                                 </constraints>
                                 <state key="normal" title="Rock - All Code"/>
                                 <connections>
-                                    <action selector="playRock" destination="BYZ-38-t0r" eventType="touchUpInside" id="MyD-hz-fjD"/>
+                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEG-XT-dJm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS2-ag-OSV">
@@ -34,7 +34,7 @@
                                 </constraints>
                                 <state key="normal" title="Paper - Code and Segue"/>
                                 <connections>
-                                    <action selector="playPaper" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSv-Pf-yjb"/>
+                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQ3-xc-Qdb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-yL-ABg">
@@ -44,7 +44,7 @@
                                 </constraints>
                                 <state key="normal" title="Scissors - Segue Only"/>
                                 <connections>
-                                    <action selector="playScissors" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0I-sr-YrO"/>
+                                    <segue destination="srp-0W-oFl" kind="presentation" identifier="play" id="60J-5Z-B1x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,9 +58,6 @@
                             <constraint firstItem="OP2-6T-Cg2" firstAttribute="centerX" secondItem="MS2-ag-OSV" secondAttribute="centerX" id="tsT-TW-pjE"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="srp-0W-oFl" kind="presentation" identifier="play" id="OUN-WA-uV3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
