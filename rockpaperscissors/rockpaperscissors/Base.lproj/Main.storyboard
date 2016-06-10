@@ -22,7 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="hgp-iN-inj"/>
                                 </constraints>
-                                <state key="normal" title="Rock - All Code"/>
+                                <state key="normal" title="Rock - Code Only"/>
                                 <connections>
                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEG-XT-dJm"/>
                                 </connections>
@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="-301"/>
+            <point key="canvasLocation" x="-717" y="-530"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="798-2X-pmR">
@@ -75,38 +75,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-0J-3dk">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-0J-3dk">
+                                <rect key="frame" x="189" y="283" width="223" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="0rX-Nf-2PL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM8-Q2-c6P">
-                                <rect key="frame" x="216" y="348" width="168" height="30"/>
+                                <rect key="frame" x="216" y="351" width="168" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="168" id="BoA-ip-3nB"/>
+                                    <constraint firstAttribute="width" constant="168" id="mw9-Lk-1Yu"/>
                                 </constraints>
                                 <state key="normal" title="Play Again"/>
                                 <connections>
                                     <action selector="playAgain" destination="srp-0W-oFl" eventType="touchUpInside" id="3CZ-42-xKs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-G0-sAQ">
+                                <rect key="frame" x="227" y="218" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="re7-Qt-l9w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nM8-Q2-c6P" firstAttribute="top" secondItem="5bZ-0J-3dk" secondAttribute="bottom" constant="38" id="4Dr-7e-erP"/>
-                            <constraint firstItem="5bZ-0J-3dk" firstAttribute="centerY" secondItem="3Ys-kb-XBJ" secondAttribute="centerY" id="A47-ah-FtY"/>
-                            <constraint firstItem="5bZ-0J-3dk" firstAttribute="centerX" secondItem="3Ys-kb-XBJ" secondAttribute="centerX" id="AgS-jP-Rpz"/>
-                            <constraint firstItem="5bZ-0J-3dk" firstAttribute="centerX" secondItem="nM8-Q2-c6P" secondAttribute="centerX" id="u2M-VS-yDh"/>
+                            <constraint firstItem="IIu-G0-sAQ" firstAttribute="centerX" secondItem="3Ys-kb-XBJ" secondAttribute="centerX" id="8bp-8j-1a0"/>
+                            <constraint firstItem="5bZ-0J-3dk" firstAttribute="centerX" secondItem="nM8-Q2-c6P" secondAttribute="centerX" id="OCf-v3-ugX"/>
+                            <constraint firstItem="IIu-G0-sAQ" firstAttribute="centerX" secondItem="5bZ-0J-3dk" secondAttribute="centerX" id="d7q-L9-Z9H"/>
+                            <constraint firstItem="nM8-Q2-c6P" firstAttribute="top" secondItem="5bZ-0J-3dk" secondAttribute="bottom" constant="47" id="dVY-Md-VkC"/>
+                            <constraint firstItem="IIu-G0-sAQ" firstAttribute="top" secondItem="nPL-Cz-abg" secondAttribute="bottom" constant="198" id="eMX-dO-PXQ"/>
+                            <constraint firstItem="5bZ-0J-3dk" firstAttribute="top" secondItem="IIu-G0-sAQ" secondAttribute="bottom" constant="44" id="qV8-35-QQm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="opponentLabel" destination="IIu-G0-sAQ" id="AEa-fW-93T"/>
                         <outlet property="resultLabel" destination="5bZ-0J-3dk" id="ulo-MX-sFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwO-if-Jpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="-361"/>
+            <point key="canvasLocation" x="-601" y="-515"/>
         </scene>
     </scenes>
 </document>
